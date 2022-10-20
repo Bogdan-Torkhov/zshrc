@@ -127,6 +127,7 @@ PYTHONPATH="/usr/bin/python3"
 export PYTHONPATH
 # add Pulumi to the PATH
 export PATH=$PATH:$HOME/.pulumi/bin
+export PATH="/home/deusbog/.local/bin:$PATH"
 source /home/deusbog/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Dracula Theme (for zsh-syntax-highlighting)
@@ -141,7 +142,6 @@ source /home/deusbog/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # @author George Pickering <@bigpick>
 # @author Zeno Rocha <hi@zenorocha.com>
 # Paste this files contents inside your ~/.zshrc before you activate zsh-syntax-highlighting
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
 typeset -gA ZSH_HIGHLIGHT_STYLES
 # Default groupings per, https://spec.draculatheme.com, try to logically separate
 # possible ZSH_HIGHLIGHT_STYLES settings accordingly...?
