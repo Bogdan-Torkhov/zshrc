@@ -84,6 +84,7 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions kubectl history emoji e
 
 export DENO_INSTALL="/home/deusbog/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+export PATH="~/.bun/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,7 +122,8 @@ source /home/deusbog/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias pip="pip3"
-alias python="python3"
+alias python="python3.11"
+alias python3="python3.11"
 alias emacs='emacs -nw'
 PYTHONPATH="/usr/bin/python3"
 export PYTHONPATH
@@ -219,3 +221,11 @@ ZSH_HIGHLIGHT_STYLES[redirection]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[default]='fg=#F8F8F2'
 ZSH_HIGHLIGHT_STYLES[cursor]='standout'
+source /home/deusbog/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# bun completions
+[ -s "/home/deusbog/.bun/_bun" ] && source "/home/deusbog/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
