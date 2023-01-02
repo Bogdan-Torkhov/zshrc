@@ -122,8 +122,7 @@ source /home/deusbog/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias pip="pip3"
-alias python="python3.11"
-alias python3="python3.11"
+alias python="python3"
 alias emacs='emacs -nw'
 PYTHONPATH="/usr/bin/python3"
 export PYTHONPATH
